@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="min-h-screen bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 text-white p-4 text-center">
+      <h1 class="text-3xl font-bold">My Portfolio</h1>
+    </header>
+    <main class="p-6">
+      <ProfileSection />
+      <SkillSection />
+      <ExperienceSection />
+      <EducationSection />
+      <ProjectSection />
+    </main>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { defineComponent } from 'vue';
+import ProfileSection from './components/ProfileSection.vue';
+import SkillSection from './components/SkillSection.vue';
+import ExperienceSection from './components/ExperienceSection.vue';
+import EducationSection from './components/EducationSection.vue';
+import ProjectSection from './components/ProjectSection.vue';
 
-export default {
-  name: 'App',
+export default defineComponent({
   components: {
-    HelloWorld
-  }
-}
+    ProfileSection,
+    SkillSection,
+    ExperienceSection,
+    EducationSection,
+    ProjectSection,
+  },
+});
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
 }
 </style>
