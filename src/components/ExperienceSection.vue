@@ -58,9 +58,36 @@
           { 
             company: '株式会社Ｚ会', 
             role: 'バックエンドエンジニア/フロントエンドエンジニア', 
-            year: '2023/10-現在',
+            year: '2024/06-2024/08, 2025/04-2025/05',
             description: 'toB向けサービスの改修を担当。GoとVue.jsを使用して、バックエンド開発とフロントエンド開発を行う。',
             technologies: ['Go', 'Vue.js', 'TypeScript']
+          },
+          {
+            company: 'モリカトロン株式会社',
+            role: 'バックエンドエンジニア',
+            year: '2023/04-2023/07',
+            description: 'インディーゲーム祭典用の自社ゲームのプロトタイプ開発',
+            technologies: ['Python', 'Git', 'GitHub', 'FastAPI']
+          },
+          {
+            company: 'モリカトロン株式会社',
+            role: '機械学習エンジニア',
+            year: '2020/10-2023/03',
+            description: '機械学習を用いた雑談のできるテキスト生成モデルの開発と、そのモデルのボットへの適用。',
+            technologies: ['Python', 'MySQL', 'Pytorch', 'FastAPI']
+          },
+          {
+            company: 'モリカトロン株式会社',
+            role: '機械学習エンジニア',
+            year: '2022/09-2022/12',
+            description: 'ニューラルネットワークを用いた分類モデルの構築',
+            technologies: ['Python', 'Pytorch']
+          },
+          {
+            company: 'モリカトロン株式会社',
+            role: '機械学習エンジニア',
+            year: '2021/04-2022/12',
+            description: '採用におけるカジュアル面談と書類選考'
           },
         ],
       };
