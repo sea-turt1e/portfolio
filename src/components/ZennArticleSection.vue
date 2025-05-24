@@ -111,8 +111,10 @@ export default defineComponent({
         loading.value = true;
         error.value = null;
         
-        // ZennのRSSフィードまたは公開APIを試す
-        // 直接APIが利用できない場合は、手動で設定した記事リストを表示
+        // ZennのAPIから記事を取得する（複数のフォールバック方法を実装）
+        // 1. CORSプロキシ経由でのAPI呼び出し
+        // 2. 静的JSONファイルからの読み込み  
+        // 3. ハードコードされた記事データ
         const hardcodedArticles: ZennArticle[] = [
           {
             id: 1,
@@ -146,17 +148,22 @@ export default defineComponent({
           }
         ];
 
-        // 実際のAPIを試す（CORS問題がある場合はハードコードされた記事を使用）
+        // 実際のAPIを試す（CORSプロキシ経由）
         try {
-          const response = await fetch('https://zenn.dev/api/articles?username=sea_turt1e&order=latest', {
-            mode: 'cors',
+          // CORSプロキシを使用してZenn APIにアクセス
+          const proxyUrl = 'https://api.allorigins.win/get?url=';
+          const targetUrl = encodeURIComponent('https://zenn.dev/api/articles?username=sea_turt1e&order=latest');
+          const response = await fetch(`${proxyUrl}${targetUrl}`, {
+            method: 'GET',
             headers: {
               'Accept': 'application/json',
             }
           });
           
           if (response.ok) {
-            const data = await response.json();
+            const proxyData = await response.json();
+            // CORSプロキシから返されたデータを解析
+            const data = JSON.parse(proxyData.contents);
             articles.value = data.articles.slice(0, 6).map((article: any) => ({
               id: article.id,
               title: article.title,
@@ -168,11 +175,24 @@ export default defineComponent({
               topics: article.topics || []
             }));
           } else {
-            throw new Error('API response not ok');
+            throw new Error('Proxy API response not ok');
           }
         } catch (apiError) {
-          console.log('API呼び出しに失敗したため、ハードコードされた記事を表示します:', apiError);
-          articles.value = hardcodedArticles;
+          console.log('API呼び出しに失敗したため、静的ファイルからデータを取得します:', apiError);
+          
+          // 静的ファイルから記事データを取得
+          try {
+            const staticResponse = await fetch('/zenn-articles.json');
+            if (staticResponse.ok) {
+              const staticData = await staticResponse.json();
+              articles.value = staticData.articles.slice(0, 6);
+            } else {
+              throw new Error('Static file not found');
+            }
+          } catch (staticError) {
+            console.log('静的ファイルからの取得も失敗したため、ハードコードされた記事を表示します:', staticError);
+            articles.value = hardcodedArticles;
+          }
         }
         
       } catch (err) {
@@ -210,6 +230,7 @@ export default defineComponent({
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -217,6 +238,7 @@ export default defineComponent({
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "【kanjiconv】固有名詞にも対応した「漢字」→「かな/ローマ字」Python変換ライブラリ",
+      "slug": "kanjiconv-python",
+      "published_at": "2024-10-24",
+      "body_letters_count": 2500,
+      "liked_count": 15,
+      "path": "/sea_turt1e/articles/kanjiconv-python",
+      "topics": [{ "name": "機械学習" }, { "name": "Python" }]
+    },
+    {
+      "id": 2,
+      "title": "グラフニューラルネットワークでNBA選手の相性を予測してみた話",
+      "slug": "nba-gnn-prediction",
+      "published_at": "2025-01-07",
+      "body_letters_count": 2000,
+      "liked_count": 5,
+      "path": "/sea_turt1e/articles/2410af8823e6bd",
+      "topics": [{ "name": "機械学習" }, { "name": "グラフニューラルネットワーク" }]
+    },
+    {
+      "id": 3,
+      "title": "ルールベースで表記揺れを解消するPythonライブラリ「yurenizer」を作成しました",
+      "slug": "yurenizer-python",
+      "published_at": "2024-11-25",
+      "body_letters_count": 2746,
+      "liked_count": 18,
+      "path": "/sea_turt1e/articles/afbe326366f1e7",
+      "topics": [{ "name": "Python" }, { "name": "表記揺れ" }]
+    }
+  ],
+  "lastUpdated": "2025-05-25T00:00:00Z"
+}
