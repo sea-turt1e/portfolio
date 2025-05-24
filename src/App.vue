@@ -10,6 +10,7 @@
           <div class="hidden md:flex space-x-8">
             <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
             <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+            <a href="#certifications" class="text-gray-600 hover:text-blue-600 transition-colors">Certifications</a>
             <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">Experience</a>
             <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
             <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
@@ -66,6 +67,9 @@
       <div id="skills">
         <SkillSection />
       </div>
+      <div id="certifications">
+        <CertificationSection />
+      </div>
       <div id="experience">
         <ExperienceSection />
       </div>
@@ -97,6 +101,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import CertificationSection from './components/CertificationSection.vue';
 import EducationSection from './components/EducationSection.vue';
 import ExperienceSection from './components/ExperienceSection.vue';
 import ProfileSection from './components/ProfileSection.vue';
@@ -108,6 +113,7 @@ export default defineComponent({
   components: {
     ProfileSection,
     SkillSection,
+    CertificationSection,
     ExperienceSection,
     EducationSection,
     ProjectSection,
