@@ -1,25 +1,93 @@
 <template>
-  <div class="min-h-screen bg-gray-100 text-gray-800">
-    <header class="bg-blue-500 text-white p-4 text-center">
-      <h1 class="text-3xl font-bold">My Portfolio</h1>
-    </header>
-    <main class="p-6">
-      <ProfileSection />
-      <SkillSection />
-      <ExperienceSection />
-      <EducationSection />
-      <ProjectSection />
+  <div class="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+      <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Yamada Hikaru
+          </h1>
+          <div class="hidden md:flex space-x-8">
+            <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+            <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+            <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">Experience</a>
+            <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
+            <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-6 sm:px-8 lg:px-12">
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="mb-8">
+          <img 
+            src="https://via.placeholder.com/150/4F46E5/FFFFFF?text=YH" 
+            alt="Profile" 
+            class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg ring-4 ring-white"
+          >
+        </div>
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">
+          こんにちは！<br>
+          <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            エンジニアです
+          </span>
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          フルスタック開発者として、Python、Go、Vue.jsを使用してモダンなWebアプリケーションを構築しています。
+        </p>
+        <div class="mt-8 flex justify-center space-x-4">
+          <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors shadow-lg">
+            プロジェクトを見る
+          </button>
+          <button class="border border-blue-600 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+            お問い合わせ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 space-y-20">
+      <div id="about">
+        <ProfileSection />
+      </div>
+      <div id="skills">
+        <SkillSection />
+      </div>
+      <div id="experience">
+        <ExperienceSection />
+      </div>
+      <div id="education">
+        <EducationSection />
+      </div>
+      <div id="projects">
+        <ProjectSection />
+      </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-20">
+      <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+        <p class="text-gray-400">© 2025 Yamada Hikaru. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ProfileSection from './components/ProfileSection.vue';
-import SkillSection from './components/SkillSection.vue';
-import ExperienceSection from './components/ExperienceSection.vue';
 import EducationSection from './components/EducationSection.vue';
+import ExperienceSection from './components/ExperienceSection.vue';
+import ProfileSection from './components/ProfileSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
+import SkillSection from './components/SkillSection.vue';
 
 export default defineComponent({
   components: {
