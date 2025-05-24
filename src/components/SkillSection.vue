@@ -61,7 +61,7 @@ export default defineComponent({
           percentage: 40,
           level: 'Intermediate',
           color: '#00add8',
-          icon: '⚡',
+          icon: '🐿️',
           description: 'API開発に使用'
         },
         { 
@@ -69,7 +69,7 @@ export default defineComponent({
           percentage: 20,
           level: 'Beginner',
           color: '#4fc08d',
-          icon: '💚',
+          icon: '誣い誣い',
           description: 'フロントエンド開発に使用'
         },
       ],

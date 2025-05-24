@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Build
+      run: npm run build
+      
+    - name: Deploy to User GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        publish_dir: ./dist
+        # ユーザーページの場合は外部リポジトリにデプロイ
+        external_repository: sea-turt1e/sea-turt1e.github.io
+        publish_branch: main
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
