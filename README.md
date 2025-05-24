@@ -51,7 +51,6 @@ src/
 │   ├── EducationSection.vue
 │   ├── ProjectSection.vue
 │   ├── ZennArticleSection.vue
-│   └── HatenaBlogSection.vue
 ├── assets/             # 静的ファイル
 └── App.vue            # メインアプリケーション
 ```
