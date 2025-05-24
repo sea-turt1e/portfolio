@@ -13,6 +13,7 @@
             <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">Experience</a>
             <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
             <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+            <a href="#articles" class="text-gray-600 hover:text-blue-600 transition-colors">Articles</a>
           </div>
         </div>
       </div>
@@ -74,6 +75,9 @@
       <div id="projects">
         <ProjectSection />
       </div>
+      <div id="articles">
+        <ZennArticleSection />
+      </div>
     </main>
 
     <!-- Footer -->
@@ -98,6 +102,7 @@ import ExperienceSection from './components/ExperienceSection.vue';
 import ProfileSection from './components/ProfileSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
 import SkillSection from './components/SkillSection.vue';
+import ZennArticleSection from './components/ZennArticleSection.vue';
 
 export default defineComponent({
   components: {
@@ -106,6 +111,7 @@ export default defineComponent({
     ExperienceSection,
     EducationSection,
     ProjectSection,
+    ZennArticleSection,
   },
 });
 </script>
