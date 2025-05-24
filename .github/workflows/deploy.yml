@@ -2,9 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main, master, develop ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ main, master, develop ]
+    branches: [ main, develop ]
 
 jobs:
   build-and-deploy:
@@ -28,7 +28,7 @@ jobs:
       
     - name: Deploy to User GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_dir: ./dist
