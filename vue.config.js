@@ -1,4 +1,7 @@
 module.exports = {
+  // ユーザーページ (sea-turt1e.github.io) として公開する場合はルートパスを使用
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
+  
   devServer: {
     client: {
       webSocketURL: {
