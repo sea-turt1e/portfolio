@@ -5,7 +5,7 @@
       <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-4">
         <div class="flex justify-between items-center">
           <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            sea-turt1e
+            sea-turt1e's Portfolio
           </h1>
           <div class="hidden md:flex space-x-8">
             <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
@@ -21,13 +21,13 @@
     <!-- Hero Section -->
     <section class="pt-24 pb-16 px-6 sm:px-8 lg:px-12">
       <div class="max-w-6xl mx-auto text-center">
-        <div class="mb-8">
+        <!-- <div class="mb-8">
           <img 
             src="https://via.placeholder.com/150/4F46E5/FFFFFF?text=YH" 
             alt="Profile" 
             class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg ring-4 ring-white"
           >
-        </div>
+        </div> -->
         <h2 class="text-5xl font-bold text-gray-800 mb-4">
           こんにちは！<br>
           <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
