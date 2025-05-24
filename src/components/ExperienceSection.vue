@@ -42,18 +42,25 @@
       return {
         experiences: [
           { 
-            company: 'Tech Corp', 
-            role: 'シニアフルスタック開発者', 
-            year: '2020-2023',
-            description: 'Webアプリケーションの設計・開発・運用を担当。チームリードとして5名のメンバーをマネジメント。',
-            technologies: ['Python', 'Vue.js', 'PostgreSQL', 'Docker', 'AWS']
+            company: '株式会社Ｚ会', 
+            role: '研究開発チームリーダー', 
+            year: '2023/10-現在',
+            description: '機械学習モデル開発とデータ分析、LLMを用いたプロトタイプ開発を担当。チームリーダーとしてプロジェクトの進行管理を行う。',
+            technologies: ['Python', 'PyTorch', 'LLM', 'AWS']
           },
           { 
-            company: 'Code Studio', 
-            role: 'バックエンド開発者', 
-            year: '2018-2020',
-            description: 'REST APIの開発とマイクロサービスアーキテクチャの構築。パフォーマンス最適化により応答時間を50%改善。',
-            technologies: ['Go', 'MongoDB', 'Redis', 'Kubernetes', 'GCP']
+            company: '株式会社Ｚ会', 
+            role: 'バックエンドエンジニア', 
+            year: '2023/10-現在',
+            description: '自社の他サービスからアクセスされるAI関連サービスのAPIの開発と運用',
+            technologies: ['Python', 'OpenAPI', 'FastAPI', 'GitHub Actions']
+          },
+          { 
+            company: '株式会社Ｚ会', 
+            role: 'バックエンドエンジニア/フロントエンドエンジニア', 
+            year: '2023/10-現在',
+            description: 'toB向けサービスの改修を担当。GoとVue.jsを使用して、バックエンド開発とフロントエンド開発を行う。',
+            technologies: ['Go', 'Vue.js', 'TypeScript']
           },
         ],
       };
