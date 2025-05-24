@@ -69,7 +69,7 @@ export default defineComponent({
           percentage: 20,
           level: 'Beginner',
           color: '#4fc08d',
-          icon: '誣い誣い',
+          icon: 'V',
           description: 'フロントエンド開発に使用'
         },
       ],
