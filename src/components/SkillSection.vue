@@ -58,19 +58,19 @@ export default defineComponent({
         },
         { 
           name: 'Go', 
-          percentage: 60,
+          percentage: 40,
           level: 'Intermediate',
           color: '#00add8',
           icon: '⚡',
-          description: 'マイクロサービス、API開発に使用'
+          description: 'API開発に使用'
         },
         { 
           name: 'Vue.js', 
-          percentage: 30,
+          percentage: 20,
           level: 'Beginner',
           color: '#4fc08d',
           icon: '💚',
-          description: 'フロントエンド開発、SPA構築に使用'
+          description: 'フロントエンド開発に使用'
         },
       ],
     };
