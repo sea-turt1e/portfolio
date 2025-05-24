@@ -82,6 +82,7 @@
         <p class="text-gray-400">© 2025 sea-turt1e. All rights reserved.</p>
         <div class="mt-4 flex justify-center space-x-6">
           <a href="https://github.com/sea-turt1e" class="text-gray-400 hover:text-white transition-colors"  target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://zenn.dev/sea_turt1e" class="text-gray-400 hover:text-white transition-colors"  target="_blank" rel="noopener noreferrer">Zenn</a>
           <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
           <a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a> -->
         </div>

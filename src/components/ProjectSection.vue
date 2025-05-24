@@ -30,7 +30,7 @@
             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
             </svg>
-            View Project
+            View Blog Post
           </a>
           <a :href="project.github" target="_blank" 
              class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors flex items-center">
@@ -53,36 +53,28 @@
       return {
         projects: [
           { 
-            name: 'Portfolio Site', 
-            link: 'https://github.com/username/portfolio',
-            github: 'https://github.com/username/portfolio',
-            icon: '🌐',
-            description: 'Vue.js と Tailwind CSS を使用して構築した個人ポートフォリオサイト。レスポンシブデザインとモダンなUIを実装。',
-            technologies: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Vite']
+            name: 'kanjiconv', 
+            link: 'https://zenn.dev/sea_turt1e/articles/e7dc022231a86c',
+            github: 'https://github.com/sea-turt1e/kanjiconv',
+            icon: '㊙️',
+            description: '固有名詞にも対応した「漢字」→「かな/ローマ字」Python変換ライブラリ',
+            technologies: ['Python', 'Sudachi', 'Mecab']
           },
           { 
-            name: 'E-commerce App', 
-            link: 'https://github.com/username/ecommerce-app',
-            github: 'https://github.com/username/ecommerce-app',
-            icon: '🛒',
-            description: 'フルスタックECサイト。決済システム、在庫管理、ユーザー認証機能を実装。Docker でのコンテナ化も実施。',
-            technologies: ['Python', 'Django', 'PostgreSQL', 'Redis', 'Docker']
+            name: 'yurenizer', 
+            link: 'https://zenn.dev/sea_turt1e/articles/afbe326366f1e7',
+            github: 'https://github.com/sea-turt1e/yurenizer',
+            icon: '🌊',
+            description: 'ルールベースで表記揺れを解消するPythonライブラリ',
+            technologies: ['Python', 'Sudachi']
           },
           { 
-            name: 'API Gateway Service', 
-            link: 'https://github.com/username/api-gateway',
-            github: 'https://github.com/username/api-gateway',
-            icon: '⚡',
-            description: 'Go言語で構築した高パフォーマンスAPIゲートウェイ。レート制限、認証、ログ機能を提供。',
-            technologies: ['Go', 'gRPC', 'MongoDB', 'Kubernetes', 'Prometheus']
-          },
-          { 
-            name: 'Data Analytics Dashboard', 
-            link: 'https://github.com/username/analytics-dashboard',
-            github: 'https://github.com/username/analytics-dashboard',
-            icon: '📊',
-            description: 'リアルタイムデータ可視化ダッシュボード。WebSocketを使用したリアルタイム更新とインタラクティブなチャートを実装。',
-            technologies: ['React', 'D3.js', 'WebSocket', 'Python', 'FastAPI']
+            name: 'NBANetwork', 
+            link: 'https://zenn.dev/sea_turt1e/articles/2410af8823e6bd',
+            github: 'https://github.com/sea-turt1e/NBANetwork',
+            icon: '🏀',
+            description: 'グラフニューラルネットワークでNBA選手の相性を予測',
+            technologies: ['Python', 'PyTorch', 'Graph Neural Network']
           },
         ],
       };
