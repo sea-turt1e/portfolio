@@ -40,8 +40,7 @@
             <div class="flex items-center space-x-2">
               <span class="flex items-center">
                 <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
                 </svg>
                 {{ article.liked_count }}
               </span>
@@ -117,6 +116,16 @@ export default defineComponent({
         // 3. ハードコードされた記事データ
         const hardcodedArticles: ZennArticle[] = [
           {
+            id: 3,
+            title: "ルールベースで表記揺れを解消するPythonライブラリ「yurenizer」を作成しました",
+            slug: "yurenizer-python",
+            published_at: "2024-11-25",
+            body_letters_count: 2746,
+            liked_count: 18,
+            path: "https://zenn.dev/sea_turt1e/articles/afbe326366f1e7",
+            topics: [{ name: "Python" }, { name: "表記揺れ" }]
+          },
+          {
             id: 1,
             title: "【kanjiconv】固有名詞にも対応した「漢字」→「かな/ローマ字」Python変換ライブラリ",
             slug: "kanjiconv-python",
@@ -135,16 +144,6 @@ export default defineComponent({
             liked_count: 5,
             path: "https://zenn.dev/sea_turt1e/articles/2410af8823e6bd",
             topics: [{ name: "機械学習" }, { name: "グラフニューラルネットワーク" }]
-          },
-          {
-            id: 3,
-            title: "ルールベースで表記揺れを解消するPythonライブラリ「yurenizer」を作成しました",
-            slug: "yurenizer-python",
-            published_at: "2024-11-25",
-            body_letters_count: 2746,
-            liked_count: 18,
-            path: "https://zenn.dev/sea_turt1e/articles/afbe326366f1e7",
-            topics: [{ name: "Python" }, { name: "表記揺れ" }]
           }
         ];
 
@@ -164,16 +163,19 @@ export default defineComponent({
             const proxyData = await response.json();
             // CORSプロキシから返されたデータを解析
             const data = JSON.parse(proxyData.contents);
-            articles.value = data.articles.slice(0, 6).map((article: any) => ({
-              id: article.id,
-              title: article.title,
-              slug: article.slug,
-              published_at: article.published_at,
-              body_letters_count: article.body_letters_count,
-              liked_count: article.liked_count,
-              path: `https://zenn.dev${article.path}`,
-              topics: article.topics || []
-            }));
+            articles.value = data.articles
+              .slice(0, 9)
+              .map((article: any) => ({
+                id: article.id,
+                title: article.title,
+                slug: article.slug,
+                published_at: article.published_at,
+                body_letters_count: article.body_letters_count,
+                liked_count: article.liked_count,
+                path: `https://zenn.dev${article.path}`,
+                topics: article.topics || []
+              }))
+              .sort((a: ZennArticle, b: ZennArticle) => b.liked_count - a.liked_count);
           } else {
             throw new Error('Proxy API response not ok');
           }
@@ -185,13 +187,15 @@ export default defineComponent({
             const staticResponse = await fetch('/zenn-articles.json');
             if (staticResponse.ok) {
               const staticData = await staticResponse.json();
-              articles.value = staticData.articles.slice(0, 6);
+              articles.value = staticData.articles
+                .slice(0, 6)
+                .sort((a: ZennArticle, b: ZennArticle) => b.liked_count - a.liked_count);
             } else {
               throw new Error('Static file not found');
             }
           } catch (staticError) {
             console.log('静的ファイルからの取得も失敗したため、ハードコードされた記事を表示します:', staticError);
-            articles.value = hardcodedArticles;
+            articles.value = hardcodedArticles.sort((a: ZennArticle, b: ZennArticle) => b.liked_count - a.liked_count);
           }
         }
         
