@@ -50,42 +50,42 @@
           },
           { 
             company: '株式会社Ｚ会', 
-            role: 'バックエンドエンジニア', 
+            role: 'AIサーバーのバックエンドエンジニア', 
             year: '2023/10-現在',
             description: '自社の他サービスからアクセスされるAI関連サービスのAPIの開発と運用',
             technologies: ['Python', 'OpenAPI', 'FastAPI', 'GitHub Actions']
           },
           { 
             company: '株式会社Ｚ会', 
-            role: 'バックエンドエンジニア/フロントエンドエンジニア', 
+            role: 'toB向けサービスのバックエンド/フロントエンドエンジニア', 
             year: '2024/06-2024/08, 2025/04-2025/05',
             description: 'toB向けサービスの改修を担当。GoとVue.jsを使用して、バックエンド開発とフロントエンド開発を行う。',
             technologies: ['Go', 'Vue.js', 'TypeScript']
           },
           {
             company: 'モリカトロン株式会社',
-            role: 'バックエンドエンジニア',
+            role: 'ゲーム開発のバックエンドエンジニア',
             year: '2023/04-2023/07',
             description: 'インディーゲーム祭典用の自社ゲームのプロトタイプ開発',
             technologies: ['Python', 'Git', 'GitHub', 'FastAPI']
           },
           {
             company: 'モリカトロン株式会社',
-            role: '機械学習エンジニア',
+            role: '生成モデル開発の機械学習/バックエンドエンジニア',
             year: '2020/10-2023/03',
             description: '機械学習を用いた雑談のできるテキスト生成モデルの開発と、そのモデルのボットへの適用。',
             technologies: ['Python', 'MySQL', 'Pytorch', 'FastAPI']
           },
           {
             company: 'モリカトロン株式会社',
-            role: '機械学習エンジニア',
+            role: '自然言語処理モデル開発の機械学習エンジニア',
             year: '2022/09-2022/12',
-            description: 'ニューラルネットワークを用いた分類モデルの構築',
+            description: 'ニューラルネットワークを用いた自然言語処理分類モデルの構築',
             technologies: ['Python', 'Pytorch']
           },
           {
             company: 'モリカトロン株式会社',
-            role: '機械学習エンジニア',
+            role: '採用（機械学習エンジニア）',
             year: '2021/04-2022/12',
             description: '採用におけるカジュアル面談と書類選考'
           },
