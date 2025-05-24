@@ -1,11 +1,13 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+  <div id="top" class="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
       <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-4">
         <div class="flex justify-between items-center">
           <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            sea-turt1e's Portfolio
+            <a href="#top" class="cursor-pointer no-underline hover:underline">
+              sea-turt1e's Portfolio
+            </a>
           </h1>
           <div class="hidden md:flex space-x-8">
             <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
