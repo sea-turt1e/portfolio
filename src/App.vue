@@ -9,14 +9,17 @@
               sea-turt1e's Portfolio
             </a>
           </h1>
-          <div class="hidden md:flex space-x-8">
-            <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-            <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
-            <a href="#certifications" class="text-gray-600 hover:text-blue-600 transition-colors">Certifications</a>
-            <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">Experience</a>
-            <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
-            <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
-            <a href="#articles" class="text-gray-600 hover:text-blue-600 transition-colors">Articles</a>
+          <div class="flex items-center space-x-8">
+            <div class="hidden md:flex space-x-8">
+              <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.profile') }}</a>
+              <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.skills') }}</a>
+              <a href="#certifications" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.certifications') }}</a>
+              <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.experience') }}</a>
+              <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.education') }}</a>
+              <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.projects') }}</a>
+              <a href="#articles" class="text-gray-600 hover:text-blue-600 transition-colors">{{ $t('navigation.articles') }}</a>
+            </div>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
@@ -25,22 +28,14 @@
     <!-- Hero Section -->
     <section class="pt-24 pb-16 px-6 sm:px-8 lg:px-12">
       <div class="max-w-6xl mx-auto text-center">
-        <!-- <div class="mb-8">
-          <img 
-            src="https://via.placeholder.com/150/4F46E5/FFFFFF?text=YH" 
-            alt="Profile" 
-            class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg ring-4 ring-white"
-          >
-        </div> -->
         <h2 class="text-5xl font-bold text-gray-800 mb-4">
-          こんにちは！<br>
+          {{ $t('profile.greeting') }}<br>
           <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            sea-turt1eです
+            {{ $t('profile.name') }}
           </span>
         </h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          自然言語処理を専門とした機械学習エンジニアとして活動しています。<br>
-          他にバックエンドやフロントエンドの開発、インフラの構築なども少々。
+          {{ $t('profile.description') }}
         </p>
         <div class="mt-8 flex justify-center space-x-4">
           <a 
@@ -49,13 +44,13 @@
             rel="noopener noreferrer"
             class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors shadow-lg inline-block text-center no-underline"
           >
-            GitHubページへ
+            {{ $t('profile.githubLink') }}
           </a>
           <a 
             href="mailto:h.yamada.bg@gmail.com?subject=お問い合わせ"
             class="border border-blue-600 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-colors inline-block text-center no-underline"
           >
-            お問い合わせ
+            {{ $t('profile.contactLink') }}
           </a>
         </div>
       </div>
@@ -106,6 +101,7 @@ import { defineComponent } from 'vue';
 import CertificationSection from './components/CertificationSection.vue';
 import EducationSection from './components/EducationSection.vue';
 import ExperienceSection from './components/ExperienceSection.vue';
+import LanguageSwitcher from './components/LanguageSwitcher.vue';
 import ProfileSection from './components/ProfileSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
 import SkillSection from './components/SkillSection.vue';
@@ -120,6 +116,7 @@ export default defineComponent({
     EducationSection,
     ProjectSection,
     ZennArticleSection,
+    LanguageSwitcher,
   },
 });
 </script>
