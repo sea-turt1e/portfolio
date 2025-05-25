@@ -43,7 +43,7 @@ export default defineComponent({
 
     const languages = [
       { code: 'ja', name: '日本語', flag: '🇯🇵' },
-      { code: 'en', name: 'English', flag: '🇺🇸' }
+      { code: 'en', name: 'English(US)', flag: '🇺🇸' }
     ]
 
     const currentLocale = computed(() => locale.value)
