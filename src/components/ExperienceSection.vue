@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white rounded-lg shadow-lg p-8">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Work Experience</h2>
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">{{ $t('experience.title') }}</h2>
       <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"></div>
     </div>
     
@@ -38,60 +38,69 @@
   import { defineComponent } from 'vue';
   
   export default defineComponent({
-    data() {
-      return {
-        experiences: [
+    computed: {
+      experiences() {
+        const experienceData = [
           { 
-            company: '株式会社Ｚ会', 
-            role: '研究開発チームリーダー', 
-            year: '2024/09-現在',
-            description: '機械学習モデル開発とデータ分析、LLMを用いたプロトタイプ開発を担当。チームリーダーとしてプロジェクトの進行管理を行う。',
+            companyKey: 'experience.zkai.company',
+            roleKey: 'experience.zkai.leader.role', 
+            yearKey: 'experience.zkai.leader.year',
+            descriptionKey: 'experience.zkai.leader.description',
             technologies: ['Python', 'PyTorch', 'LLM', 'AWS']
           },
           { 
-            company: '株式会社Ｚ会', 
-            role: 'AIサーバーのバックエンドエンジニア', 
-            year: '2023/10-現在',
-            description: '自社の他サービスからアクセスされるAI関連サービスのAPIの開発と運用',
+            companyKey: 'experience.zkai.company',
+            roleKey: 'experience.zkai.ai.role', 
+            yearKey: 'experience.zkai.ai.year',
+            descriptionKey: 'experience.zkai.ai.description',
             technologies: ['Python', 'OpenAPI', 'FastAPI', 'GitHub Actions']
           },
           { 
-            company: '株式会社Ｚ会', 
-            role: 'toB向けサービスのバックエンド/フロントエンドエンジニア', 
-            year: '2024/06-2024/08, 2025/04-2025/05',
-            description: 'toB向けサービスの改修を担当。GoとVue.jsを使用して、バックエンド開発とフロントエンド開発を行う。',
+            companyKey: 'experience.zkai.company',
+            roleKey: 'experience.zkai.fullstack.role', 
+            yearKey: 'experience.zkai.fullstack.year',
+            descriptionKey: 'experience.zkai.fullstack.description',
             technologies: ['Go', 'Vue.js', 'TypeScript']
           },
           {
-            company: 'モリカトロン株式会社',
-            role: 'ゲーム開発のバックエンドエンジニア',
-            year: '2023/04-2023/07',
-            description: 'インディーゲーム祭典用の自社ゲームのプロトタイプ開発',
+            companyKey: 'experience.morikatron.company',
+            roleKey: 'experience.morikatron.game.role',
+            yearKey: 'experience.morikatron.game.year',
+            descriptionKey: 'experience.morikatron.game.description',
             technologies: ['Python', 'Git', 'GitHub', 'FastAPI']
           },
           {
-            company: 'モリカトロン株式会社',
-            role: '生成モデル開発の機械学習/バックエンドエンジニア',
-            year: '2020/10-2023/03',
-            description: '機械学習を用いた雑談のできるテキスト生成モデルの開発と、モデルのボットへの適用。',
+            companyKey: 'experience.morikatron.company',
+            roleKey: 'experience.morikatron.textgen.role',
+            yearKey: 'experience.morikatron.textgen.year',
+            descriptionKey: 'experience.morikatron.textgen.description',
             technologies: ['Python', 'MySQL', 'Pytorch', 'FastAPI']
           },
           {
-            company: 'モリカトロン株式会社',
-            role: '自然言語処理モデル開発の機械学習エンジニア',
-            year: '2022/09-2022/12',
-            description: 'ニューラルネットワークを用いた自然言語処理分類モデルの構築',
+            companyKey: 'experience.morikatron.company',
+            roleKey: 'experience.morikatron.nlp.role',
+            yearKey: 'experience.morikatron.nlp.year',
+            descriptionKey: 'experience.morikatron.nlp.description',
             technologies: ['Python', 'Pytorch']
           },
           {
-            company: 'モリカトロン株式会社',
-            role: '採用（機械学習エンジニア）',
-            year: '2021/04-2022/12',
-            description: '採用におけるカジュアル面談と書類選考'
+            companyKey: 'experience.morikatron.company',
+            roleKey: 'experience.morikatron.recruitment.role',
+            yearKey: 'experience.morikatron.recruitment.year',
+            descriptionKey: 'experience.morikatron.recruitment.description',
+            technologies: []
           },
-        ],
-      };
-    },
+        ];
+
+        return experienceData.map(exp => ({
+          company: this.$t(exp.companyKey),
+          role: this.$t(exp.roleKey),
+          year: this.$t(exp.yearKey),
+          description: this.$t(exp.descriptionKey),
+          technologies: exp.technologies
+        }));
+      }
+    }
   });
   </script>
   

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white rounded-lg shadow-lg p-8">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">{{ $t('skills.title') }}</h2>
       <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"></div>
     </div>
     
@@ -19,7 +19,7 @@
         
         <div class="mb-2">
           <div class="flex justify-between items-center mb-1">
-            <span class="text-sm font-medium text-gray-700">習熟度</span>
+            <span class="text-sm font-medium text-gray-700">{{ $t('skills.proficiency') }}</span>
             <span class="text-sm text-gray-500">{{ skill.percentage }}%</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2">

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white rounded-lg shadow-lg p-8">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">資格・認定</h2>
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">{{ $t('certifications.title') }}</h2>
       <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"></div>
     </div>
     
@@ -60,52 +60,52 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-interface Certification {
-  id: number;
-  name: string;
-  organization: string;
-  // date: string;
-  // expiryDate?: string;
-  // credentialId?: string;
-  url?: string;
-  color: string;
-  icon: string;
-  description: string;
-  skills: string[];
-}
-
 export default defineComponent({
   name: 'CertificationSection',
-  data() {
-    return {
-      certifications: [
+  computed: {
+    certifications(): Array<{
+      id: number;
+      name: string;
+      organization: string;
+      url?: string;
+      color: string;
+      icon: string;
+      description: string;
+      skills: string[];
+    }> {
+      const certData = [
         {
           id: 1,
-          name: 'AWS Certified Machine Learning - Specialty',
+          nameKey: 'certifications.awsMl.name',
           organization: 'Amazon Web Services',
-          // date: '',
-          // expiryDate: '',
-          // credentialId: '',
           url: 'https://www.credly.com/badges/c6bb5a04-378b-4fe2-a5a4-12b86c063382',
           color: '#ff9900',
           icon: '☁️',
-          description: 'AWSでの機械学習に関する専門的な知識とスキルを証明する認定資格',
-          skills: ['AWS', '機械学習', 'データ分析', 'モデル開発']
+          descriptionKey: 'certifications.awsMl.description',
+          skillsKey: ['certifications.awsMl.skills.aws', 'certifications.awsMl.skills.ml', 'certifications.awsMl.skills.analysis', 'certifications.awsMl.skills.development']
         },
         {
           id: 2,
-          name: 'TOEIC L&R 795点',
+          nameKey: 'certifications.toeic.name',
           organization: 'ETS',
-          // date: '',
-          // expiryDate: '',
-          // url: '',
           color: '#059669',
           icon: '🌐',
-          description: '英語によるリスニング&リーディング能力を測定するテスト',
-          skills: ['英語', 'リスニング', 'リーディング', 'コミュニケーション'],
+          descriptionKey: 'certifications.toeic.description',
+          skillsKey: ['certifications.toeic.skills.english', 'certifications.toeic.skills.listening', 'certifications.toeic.skills.reading', 'certifications.toeic.skills.communication']
         }
-      ] as Certification[]
-    };
+      ];
+
+      return certData.map(cert => ({
+        id: cert.id,
+        name: this.$t(cert.nameKey),
+        organization: cert.organization,
+        url: cert.url,
+        color: cert.color,
+        icon: cert.icon,
+        description: this.$t(cert.descriptionKey),
+        skills: cert.skillsKey.map(skillKey => this.$t(skillKey))
+      }));
+    }
   },
   methods: {
     formatDate(dateString: string): string {
