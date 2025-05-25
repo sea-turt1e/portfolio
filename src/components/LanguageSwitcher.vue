@@ -63,7 +63,7 @@ export default defineComponent({
       isOpen.value = false
       
       // ページタイトルも更新
-      document.title = langCode === 'ja' ? 'ポートフォリオ - 山田光' : 'Portfolio - Hikaru Yamada'
+      document.title = langCode === 'ja' ? "sea-turt1e's Portfolio" : "sea-turt1e's Portfolio"
     }
 
     // クリック外しでドロップダウンを閉じる

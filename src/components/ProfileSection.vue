@@ -45,7 +45,7 @@
               
               <!-- オプション3: アバター生成サービスを使用 -->
               <!-- <img 
-                src="https://ui-avatars.com/api/?name=Yamada+Hikaru&size=250&background=4F46E5&color=fff&format=svg" 
+                src="https://ui-avatars.com/api/?name=sea_tut1e&size=250&background=4F46E5&color=fff&format=svg" 
                 alt="プロフィール画像" 
                 class="w-full h-full object-cover"
               /> -->
