@@ -1,5 +1,5 @@
-import en from './locales/en'
+import type { MessageSchema } from './index';
 
 declare module 'vue-i18n' {
-  export interface DefineLocaleMessage extends typeof en {}
+  export interface DefineLocaleMessage extends MessageSchema {}
 }
