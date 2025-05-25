@@ -1,24 +1,24 @@
 <template>
   <section class="bg-white rounded-lg shadow-lg p-8">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Zenn記事</h2>
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">{{ $t('articles.title') }}</h2>
       <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"></div>
     </div>
 
     <div v-if="loading" class="text-center py-8">
       <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-      <p class="mt-2 text-gray-600">記事を読み込み中...</p>
+      <p class="mt-2 text-gray-600">{{ $t('articles.loading') }}</p>
     </div>
 
     <div v-else-if="error" class="text-center py-8">
-      <p class="text-red-600">{{ error }}</p>
+      <p class="text-red-600">{{ $t('articles.error') }}</p>
       <a 
         href="https://zenn.dev/sea_turt1e" 
         target="_blank" 
         rel="noopener noreferrer"
         class="inline-block mt-4 text-blue-600 hover:text-blue-800 underline"
       >
-        Zennページで記事を見る
+        {{ $t('articles.viewOnZenn') }}
       </a>
     </div>
 
@@ -33,7 +33,7 @@
             {{ article.title }}
           </h3>
           <p class="text-sm text-gray-600 mb-3 line-clamp-3">
-            {{ article.body_letters_count > 100 ? article.body_letters_count + '文字' : '' }}
+            {{ article.body_letters_count > 100 ? article.body_letters_count + $t('articles.characters') : '' }}
           </p>
           <div class="flex items-center justify-between text-xs text-gray-500 mb-3">
             <span>{{ formatDate(article.published_at) }}</span>
@@ -62,7 +62,7 @@
           rel="noopener noreferrer"
           class="inline-block w-full text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors text-sm"
         >
-          記事を読む
+          {{ $t('articles.readArticle') }}
         </a>
       </article>
     </div>
@@ -74,7 +74,7 @@
         rel="noopener noreferrer"
         class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-full hover:shadow-lg transition-shadow"
       >
-        すべての記事を見る
+        {{ $t('articles.viewAll') }}
       </a>
     </div>
   </section>
