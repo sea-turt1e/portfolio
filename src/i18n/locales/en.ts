@@ -102,7 +102,7 @@ export default {
       school: 'NAIST (Nara Institute of Science and Technology)',
       degree: 'Master of Engineering',
       year: 'Apr 2018 - Mar 2020',
-      description: 'Natural Language Processing Laboratory. Specialized study in natural language processing and machine learning.',
+      description: 'Natural Language Processing Laboratory. Specialized research in natural language processing and machine learning.',
       achievements: {
         thesis: 'Master\'s Thesis: Sarcasm Detection Considering Context in Conversations',
         internship: 'Internship: Worked on news content algorithm improvement at NewsPicks Inc. (now Uzabase Inc.)'
