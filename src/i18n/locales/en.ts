@@ -20,8 +20,8 @@ export default {
     contactLink: 'Contact Me',
     specialization: 'Specialization',
     specializationDetail: 'ML Model Development\nNatural Language Processing',
-    experience: 'Experience',
-    experienceYears: '5 years'
+    otherSkills: 'Other Skills',
+    otherSkillDetail: 'Backend and Frontend Development\nInfrastructure Construction',
   },
   skills: {
     title: 'Skills',

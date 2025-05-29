@@ -20,8 +20,8 @@ export default {
     contactLink: 'お問い合わせ',
     specialization: '専門分野',
     specializationDetail: '機械学習モデル開発\n自然言語処理',
-    experience: '経験年数',
-    experienceYears: '5年'
+    otherSkills: 'その他のスキル',
+    otherSkillDetail: 'バックエンド/フロントエンド\nインフラ構築'
   },
   skills: {
     title: 'スキル',

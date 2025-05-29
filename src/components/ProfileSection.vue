@@ -14,11 +14,11 @@
         <div class="grid grid-cols-2 gap-4 mt-6">
           <div class="bg-blue-50 p-4 rounded-lg text-center">
             <h4 class="font-semibold text-blue-800">{{ $t('profile.specialization') }}</h4>
-            <p class="text-sm text-blue-600">{{ $t('profile.specializationDetail') }}</p>
+            <p class="text-sm text-blue-600 whitespace-pre-line">{{ $t('profile.specializationDetail') }}</p>
           </div>
           <div class="bg-purple-50 p-4 rounded-lg text-center">
-            <h4 class="font-semibold text-purple-800">{{ $t('profile.experience') }}</h4>
-            <p class="text-sm text-purple-600">{{ $t('profile.experienceYears') }}</p>
+            <h4 class="font-semibold text-purple-800">{{ $t('profile.otherSkills') }}</h4>
+            <p class="text-sm text-purple-600 whitespace-pre-line">{{ $t('profile.otherSkillDetail') }}</p>
           </div>
         </div>
       </div>
