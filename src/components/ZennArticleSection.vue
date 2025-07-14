@@ -116,42 +116,42 @@ export default defineComponent({
         // 3. ハードコードされた記事データ
         const hardcodedArticles: ZennArticle[] = [
           {
+            id: 1,
+            title: "https://zenn.dev/sea_turt1e/articles/manga-graph-db",
+            slug: "manga-graph-db",
+            published_at: "2025-07-14",
+            body_letters_count: 2000,
+            liked_count: 5,
+            path: "https://zenn.dev/sea_turt1e/articles/manga-graph-db",
+            topics: [{ name: "グラフDB" }, { name: "Graph" }]
+          },
+          {
             id: 3,
             title: "ルールベースで表記揺れを解消するPythonライブラリ「yurenizer」を作成しました",
-            slug: "yurenizer-python",
+            slug: "afbe326366f1e7",
             published_at: "2024-11-25",
             body_letters_count: 2746,
-            liked_count: 18,
+            liked_count: 5,
             path: "https://zenn.dev/sea_turt1e/articles/afbe326366f1e7",
             topics: [{ name: "Python" }, { name: "表記揺れ" }]
           },
           {
-            id: 1,
+            id: 2,
             title: "【kanjiconv】固有名詞にも対応した「漢字」→「かな/ローマ字」Python変換ライブラリ",
-            slug: "kanjiconv-python",
+            slug: "e7dc022231a86c",
             published_at: "2024-10-24",
             body_letters_count: 2500,
-            liked_count: 15,
-            path: "https://zenn.dev/sea_turt1e",
+            liked_count: 5,
+            path: "https://zenn.dev/sea_turt1e/articles/e7dc022231a86c",
             topics: [{ name: "機械学習" }, { name: "Python" }]
           },
-          {
-            id: 2,
-            title: "グラフニューラルネットワークでNBA選手の相性を予測してみた話",
-            slug: "nba-gnn-prediction",
-            published_at: "2025-01-07",
-            body_letters_count: 2000,
-            liked_count: 5,
-            path: "https://zenn.dev/sea_turt1e/articles/2410af8823e6bd",
-            topics: [{ name: "機械学習" }, { name: "グラフニューラルネットワーク" }]
-          }
         ];
 
         // 実際のAPIを試す（CORSプロキシ経由）
         try {
           // CORSプロキシを使用してZenn APIにアクセス
           const proxyUrl = 'https://api.allorigins.win/get?url=';
-          const targetUrl = encodeURIComponent('https://zenn.dev/api/articles?username=sea_turt1e&order=latest');
+          const targetUrl = encodeURIComponent('https://zenn.dev/api/articles?username=sea_turt1e');
           const response = await fetch(`${proxyUrl}${targetUrl}`, {
             method: 'GET',
             headers: {
