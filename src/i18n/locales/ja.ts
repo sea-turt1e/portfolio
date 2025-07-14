@@ -35,6 +35,10 @@ export default {
     title: 'プロジェクト',
     viewProject: 'ブログ記事を見る',
     viewGithub: 'GitHubで見る',
+    mangagraph:{
+      name: "MangaGraph",
+      description: "メディア芸術データベースを活用した漫画の関係性を可視化するAPIサーバー"
+    },
     kanjiconv: {
       name: 'kanjiconv',
       description: '固有名詞にも対応した「漢字」→「かな/ローマ字」Python変換ライブラリ'
