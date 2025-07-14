@@ -35,6 +35,10 @@ export default {
     title: 'Featured Projects',
     viewProject: 'View Blog Post',
     viewGithub: 'View on GitHub',
+    mangagraph: {
+      name: 'MangaGraph',
+      description: 'API for Manga Graph DB'
+    },
     kanjiconv: {
       name: 'kanjiconv',
       description: 'Python library for converting "Kanji" to "Kana/Romaji" with support for proper nouns'

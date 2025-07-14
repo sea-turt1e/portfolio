@@ -53,6 +53,14 @@
       projects() {
         const projectsData = [
           { 
+            nameKey: 'projects.mangagraph.name',
+            link: 'https://zenn.dev/sea_turt1e/articles/manga-graph-db',
+            github: 'https://github.com/sea-turt1e/manga-graph',
+            icon: '㊙️',
+            descriptionKey: 'projects.mangagraph.description',
+            technologies: ['Python', 'GraphDB', 'FastAPI']
+          },
+          { 
             nameKey: 'projects.kanjiconv.name',
             link: 'https://zenn.dev/sea_turt1e/articles/e7dc022231a86c',
             github: 'https://github.com/sea-turt1e/kanjiconv',
