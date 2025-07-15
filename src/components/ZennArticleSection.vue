@@ -126,16 +126,6 @@ export default defineComponent({
             topics: [{ name: "グラフDB" }, { name: "Graph" }]
           },
           {
-            id: 3,
-            title: "ルールベースで表記揺れを解消するPythonライブラリ「yurenizer」を作成しました",
-            slug: "afbe326366f1e7",
-            published_at: "2024-11-25",
-            body_letters_count: 2746,
-            liked_count: 5,
-            path: "https://zenn.dev/sea_turt1e/articles/afbe326366f1e7",
-            topics: [{ name: "Python" }, { name: "表記揺れ" }]
-          },
-          {
             id: 2,
             title: "【kanjiconv】固有名詞にも対応した「漢字」→「かな/ローマ字」Python変換ライブラリ",
             slug: "e7dc022231a86c",
@@ -144,6 +134,16 @@ export default defineComponent({
             liked_count: 5,
             path: "https://zenn.dev/sea_turt1e/articles/e7dc022231a86c",
             topics: [{ name: "機械学習" }, { name: "Python" }]
+          },
+          {
+            id: 3,
+            title: "ルールベースで表記揺れを解消するPythonライブラリ「yurenizer」を作成しました",
+            slug: "afbe326366f1e7",
+            published_at: "2024-11-25",
+            body_letters_count: 2746,
+            liked_count: 5,
+            path: "https://zenn.dev/sea_turt1e/articles/afbe326366f1e7",
+            topics: [{ name: "Python" }, { name: "表記揺れ" }]
           },
         ];
 
