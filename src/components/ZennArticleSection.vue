@@ -175,7 +175,7 @@ export default defineComponent({
                 path: `https://zenn.dev${article.path}`,
                 topics: article.topics || []
               }))
-              .sort((a: ZennArticle, b: ZennArticle) => b.liked_count - a.liked_count);
+              .sort((a: ZennArticle, b: ZennArticle) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
           } else {
             throw new Error('Proxy API response not ok');
           }
@@ -189,13 +189,13 @@ export default defineComponent({
               const staticData = await staticResponse.json();
               articles.value = staticData.articles
                 .slice(0, 6)
-                .sort((a: ZennArticle, b: ZennArticle) => b.liked_count - a.liked_count);
+                .sort((a: ZennArticle, b: ZennArticle) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
             } else {
               throw new Error('Static file not found');
             }
           } catch (staticError) {
             console.log('静的ファイルからの取得も失敗したため、ハードコードされた記事を表示します:', staticError);
-            articles.value = hardcodedArticles.sort((a: ZennArticle, b: ZennArticle) => b.liked_count - a.liked_count);
+            articles.value = hardcodedArticles.sort((a: ZennArticle, b: ZennArticle) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
           }
         }
         
