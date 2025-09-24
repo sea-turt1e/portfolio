@@ -55,12 +55,12 @@ export default {
   experience: {
     title: '職歴',
     present: '現在',
-    zkai: {
-      company: '株式会社Ｚ会',
+    educo: {
+      company: '通信教育企業',
       leader: {
         role: '研究開発チームリーダー',
         year: '2024/09-現在',
-        description: '機械学習モデル開発とデータ分析、LLMを用いたプロトタイプ開発を担当。チームリーダーとしてプロジェクトの進行管理を行う。'
+        description: '機械学習モデル開発とデータ分析、LLMを用いたアプリ開発を担当。チームリーダーとしてプロジェクトの進行管理を行う。'
       },
       ai: {
         role: 'AIサーバーのバックエンドエンジニア',

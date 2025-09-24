@@ -42,24 +42,24 @@
       experiences() {
         const experienceData = [
           { 
-            companyKey: 'experience.zkai.company',
-            roleKey: 'experience.zkai.leader.role', 
-            yearKey: 'experience.zkai.leader.year',
-            descriptionKey: 'experience.zkai.leader.description',
+            companyKey: 'experience.educo.company',
+            roleKey: 'experience.educo.leader.role', 
+            yearKey: 'experience.educo.leader.year',
+            descriptionKey: 'experience.educo.leader.description',
             technologies: ['Python', 'PyTorch', 'LLM', 'AWS']
           },
           { 
-            companyKey: 'experience.zkai.company',
-            roleKey: 'experience.zkai.ai.role', 
-            yearKey: 'experience.zkai.ai.year',
-            descriptionKey: 'experience.zkai.ai.description',
+            companyKey: 'experience.educo.company',
+            roleKey: 'experience.educo.ai.role', 
+            yearKey: 'experience.educo.ai.year',
+            descriptionKey: 'experience.educo.ai.description',
             technologies: ['Python', 'OpenAPI', 'FastAPI', 'GitHub Actions']
           },
           { 
-            companyKey: 'experience.zkai.company',
-            roleKey: 'experience.zkai.fullstack.role', 
-            yearKey: 'experience.zkai.fullstack.year',
-            descriptionKey: 'experience.zkai.fullstack.description',
+            companyKey: 'experience.educo.company',
+            roleKey: 'experience.educo.fullstack.role', 
+            yearKey: 'experience.educo.fullstack.year',
+            descriptionKey: 'experience.educo.fullstack.description',
             technologies: ['Go', 'Vue.js', 'TypeScript']
           },
           {
