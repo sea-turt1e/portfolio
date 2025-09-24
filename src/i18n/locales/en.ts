@@ -55,12 +55,12 @@ export default {
   experience: {
     title: 'Work Experience',
     present: 'Present',
-    zkai: {
-      company: 'Z-kai Inc.',
+    educo: {
+      company: 'Correspondence Education Company',
       leader: {
         role: 'R&D Team Leader',
         year: 'Sep 2024 - Present',
-        description: 'Leading machine learning model development, data analysis, and LLM prototype development. Managing project progress as team leader.'
+        description: 'Leading machine learning model development, data analysis, and LLM application development. Managing project progress as team leader.'
       },
       ai: {
         role: 'Backend Engineer for AI Server',
