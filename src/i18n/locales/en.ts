@@ -155,6 +155,9 @@ export default {
     readArticle: 'Read Article',
     viewAll: 'View All Articles',
     viewOnZenn: 'View on Zenn',
+    viewOnSpeakerDeck: 'View on Speaker Deck',
+    speakerDeckTitle: 'Speaker Deck Slides',
+    speakerDeckDescription: 'Browse presentation materials published on Speaker Deck.',
     characters: 'characters',
     likes: 'likes'
   },

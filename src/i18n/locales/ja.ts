@@ -155,6 +155,9 @@ export default {
     readArticle: '記事を読む',
     viewAll: 'すべての記事を見る',
     viewOnZenn: 'Zennページで記事を見る',
+    viewOnSpeakerDeck: 'Speaker Deckページを見る',
+    speakerDeckTitle: 'Speaker Deck',
+    speakerDeckDescription: 'Speaker Deckで公開しているスライド資料はこちらから確認できます。',
     characters: '文字',
     likes: 'いいね'
   },
