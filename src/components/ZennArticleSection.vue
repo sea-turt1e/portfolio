@@ -189,6 +189,11 @@ export default defineComponent({
               const staticData = await staticResponse.json();
               articles.value = staticData.articles
                 .slice(0, 6)
+                .map((article: ZennArticle) => ({
+                  ...article,
+                  path: article.path.startsWith('http') ? article.path : `https://zenn.dev${article.path}`,
+                  topics: article.topics || []
+                }))
                 .sort((a: ZennArticle, b: ZennArticle) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
             } else {
               throw new Error('Static file not found');
