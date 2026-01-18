@@ -95,6 +95,53 @@
         </a>
       </div>
     </div>
+
+    <!-- Speaking History Section -->
+    <div class="mt-12">
+      <div class="bg-gray-50 rounded-lg p-6 border border-gray-100 shadow-sm">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">{{ $t('articles.speakingHistoryTitle') }}</h3>
+        <p class="text-gray-600 mb-6 text-center">{{ $t('articles.speakingHistoryDescription') }}</p>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="flex-shrink-0 w-2 h-2 mt-2 bg-blue-600 rounded-full"></span>
+            <div>
+              <span class="font-semibold text-gray-800">PyConJP 2025:</span>
+              <a 
+                href="https://2025.pycon.jp/en/timetable/talk/ZVTUGM" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-blue-600 hover:text-blue-800 hover:underline ml-1"
+              >
+                GraphRAG：グラフDBで強化したRAGによるLLM生成の実装
+              </a>
+              <span class="text-gray-500 text-sm ml-1">{{ $t('articles.speakingPoster') }}</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="flex-shrink-0 w-2 h-2 mt-2 bg-blue-600 rounded-full"></span>
+            <div>
+              <span class="font-semibold text-gray-800">Start Python Club:</span>
+              <a 
+                href="https://startpython.connpass.com/event/371646/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-blue-600 hover:text-blue-800 hover:underline ml-1"
+              >
+                GraphRAG：グラフDBを使ったLLM生成（自作漫画DBを用いた具体例を使って）
+              </a>
+              <span class="text-gray-500 text-sm ml-1">{{ $t('articles.speakingTalk') }}</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="flex-shrink-0 w-2 h-2 mt-2 bg-purple-600 rounded-full"></span>
+            <div>
+              <span class="font-semibold text-gray-800">PyCon mini Shizuoka 2026{{ $t('articles.speakingPlanned') }}:</span>
+              <span class="text-gray-700 ml-1">DSPy入門{{ $t('articles.speakingTalk') }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 </template>
 
