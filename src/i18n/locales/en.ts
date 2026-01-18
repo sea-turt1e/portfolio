@@ -158,6 +158,12 @@ export default {
     viewOnSpeakerDeck: 'View on Speaker Deck',
     speakerDeckTitle: 'Speaker Deck Slides',
     speakerDeckDescription: 'Browse presentation materials published on Speaker Deck.',
+    speakingHistoryTitle: 'Speaking History',
+    speakingHistoryDescription: 'Conference and meetup speaking engagements.',
+    speakingPoster: '(Poster Session)',
+    speakingTalk: '(Talk)',
+    speakingPlanned: ' (Scheduled)',
+    speakingTentative: ' (Tentative Title)',
     characters: 'characters',
     likes: 'likes'
   },

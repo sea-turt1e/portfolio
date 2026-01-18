@@ -158,6 +158,12 @@ export default {
     viewOnSpeakerDeck: 'Speaker Deckページを見る',
     speakerDeckTitle: 'Speaker Deck',
     speakerDeckDescription: 'Speaker Deckで公開しているスライド資料はこちらから確認できます。',
+    speakingHistoryTitle: '登壇歴',
+    speakingHistoryDescription: 'カンファレンスや勉強会での登壇実績です。',
+    speakingPoster: '（ポスターセッション）',
+    speakingTalk: '（トーク）',
+    speakingPlanned: '（予定）',
+    speakingTentative: '（仮タイトル）',
     characters: '文字',
     likes: 'いいね'
   },
