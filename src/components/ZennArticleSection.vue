@@ -136,7 +136,13 @@
             <span class="flex-shrink-0 w-2 h-2 mt-2 bg-purple-600 rounded-full"></span>
             <div>
               <span class="font-semibold text-gray-800">PyCon mini Shizuoka 2026{{ $t('articles.speakingPlanned') }}:</span>
-              <span class="text-gray-700 ml-1">DSPy入門{{ $t('articles.speakingTalk') }}</span>
+              <span class="text-gray-700 ml-1">
+                              <a 
+                href="https://shizuoka.pycon.jp/2026/info"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-blue-600 hover:text-blue-800 hover:underline ml-1"
+              >DSPy入門{{ $t('articles.speakingTalk') }}</a></span>
             </div>
           </li>
         </ul>
