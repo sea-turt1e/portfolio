@@ -105,7 +105,7 @@ export default {
     naist: {
       school: 'NAIST (Nara Institute of Science and Technology)',
       degree: 'Master of Engineering',
-      year: 'Apr 2018 - Mar 2020',
+      year: 'Oct 2018 - Sep 2020',
       description: 'Natural Language Processing Laboratory. Specialized research in natural language processing and machine learning.',
       achievements: {
         thesis: 'Master\'s Thesis: Sarcasm Detection Considering Context in Conversations',
@@ -114,8 +114,8 @@ export default {
     },
     tsukuba: {
       school: 'University of Tsukuba',
-      degree: 'Bachelor of Social Engineering',
-      year: 'Apr 2014 - Mar 2018',
+      degree: 'Bachelor of Engineering',
+      year: 'Apr 2009 - Sep 2015',
       description: 'Organizational Behavior Laboratory. Studied behavioral psychology and acquired fundamentals of data analysis and statistics.',
       achievements: {
         thesis: 'Graduation Thesis: Analysis and statistical research on nurses\' coping with depression',
