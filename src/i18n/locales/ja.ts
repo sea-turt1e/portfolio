@@ -105,7 +105,7 @@ export default {
     naist: {
       school: 'NAIST（奈良先端科学技術大学院大学）',
       degree: '工学修士',
-      year: '2018/04-2020/03',
+      year: '2018/10-2020/09',
       description: '自然言語処理学研究室。自然言語処理と機械学習を専門的に研究。',
       achievements: {
         thesis: '修士論文: 会話における文脈を考慮した皮肉検出',
@@ -115,7 +115,7 @@ export default {
     tsukuba: {
       school: '筑波大学',
       degree: '社会工学士',
-      year: '2014/04-2018/03',
+      year: '2009/04-2015/09',
       description: '組織行動論研究室。行動心理学を学び、データ分析/統計の基礎を習得。',
       achievements: {
         thesis: '卒業論文: 看護師の抑うつ対処に関する分析/統計の研究',
