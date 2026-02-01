@@ -114,7 +114,7 @@ export default {
     },
     tsukuba: {
       school: '筑波大学',
-      degree: '社会工学学士',
+      degree: '工学学士',
       year: '2009/04-2015/09',
       description: '組織行動論研究室。行動心理学を学び、データ分析/統計の基礎を習得。',
       achievements: {
