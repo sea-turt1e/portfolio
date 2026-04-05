@@ -55,16 +55,24 @@ export default {
   experience: {
     title: '職歴',
     present: '現在',
+    sbintuitions: {
+      company: 'SB Intuitions株式会社',
+      nlp: {
+        role: 'ML/NLPエンジニア',
+        year: '2026/04-現在',
+        description: '国産LLM開発に伴う自然言語処理関連業務'
+      }
+    },
     educo: {
       company: '通信教育企業',
       leader: {
         role: '研究開発チームリーダー',
-        year: '2024/09-現在',
+        year: '2024/09-2026/03',
         description: '機械学習モデル開発とデータ分析、LLMを用いたアプリ開発を担当。チームリーダーとしてプロジェクトの進行管理を行う。'
       },
       ai: {
         role: 'AIサーバーのバックエンドエンジニア',
-        year: '2023/10-現在',
+        year: '2023/10-2026/03',
         description: '自社の他サービスからアクセスされるAI関連サービスのAPIの開発と運用'
       },
       fullstack: {

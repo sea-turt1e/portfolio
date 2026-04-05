@@ -55,16 +55,24 @@ export default {
   experience: {
     title: 'Work Experience',
     present: 'Present',
+    sbintuitions: {
+      company: 'SB Intuitions Inc.',
+      nlp: {
+        role: 'ML/NLP Engineer',
+        year: 'Apr 2026 - Present',
+        description: 'Natural language processing work related to domestic LLM development'
+      }
+    },
     educo: {
       company: 'Correspondence Education Company',
       leader: {
         role: 'R&D Team Leader',
-        year: 'Sep 2024 - Present',
+        year: 'Sep 2024 - Mar 2026',
         description: 'Leading machine learning model development, data analysis, and LLM application development. Managing project progress as team leader.'
       },
       ai: {
         role: 'Backend Engineer for AI Server',
-        year: 'Oct 2023 - Present',
+        year: 'Oct 2023 - Mar 2026',
         description: 'Development and operation of AI-related service APIs accessed by other company services'
       },
       fullstack: {

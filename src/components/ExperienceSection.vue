@@ -41,7 +41,14 @@
     computed: {
       experiences() {
         const experienceData = [
-          { 
+          {
+            companyKey: 'experience.sbintuitions.company',
+            roleKey: 'experience.sbintuitions.nlp.role',
+            yearKey: 'experience.sbintuitions.nlp.year',
+            descriptionKey: 'experience.sbintuitions.nlp.description',
+            technologies: ['Python', 'NLP', 'LLM']
+          },
+          {
             companyKey: 'experience.educo.company',
             roleKey: 'experience.educo.leader.role', 
             yearKey: 'experience.educo.leader.year',
