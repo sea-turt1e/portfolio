@@ -56,7 +56,7 @@ export default {
     title: 'Work Experience',
     present: 'Present',
     sbintuitions: {
-      company: 'SB Intuitions Inc.',
+      company: 'Domestic LLM Development Company',
       nlp: {
         role: 'ML/NLP Engineer',
         year: 'Apr 2026 - Present',
@@ -82,7 +82,7 @@ export default {
       }
     },
     morikatron: {
-      company: 'Morikatron Inc.',
+      company: 'Game AI / Entertainment AI Development Company',
       game: {
         role: 'Backend Engineer for Game Development',
         year: 'Apr 2023 - Jul 2023',

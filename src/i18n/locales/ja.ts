@@ -56,7 +56,7 @@ export default {
     title: '職歴',
     present: '現在',
     sbintuitions: {
-      company: 'SB Intuitions株式会社',
+      company: '国産LLM開発企業',
       nlp: {
         role: 'ML/NLPエンジニア',
         year: '2026/04-現在',
@@ -82,7 +82,7 @@ export default {
       }
     },
     morikatron: {
-      company: 'モリカトロン株式会社',
+      company: 'ゲームAI/エンタメAI開発企業',
       game: {
         role: 'ゲーム開発のバックエンドエンジニア',
         year: '2023/04-2023/07',
