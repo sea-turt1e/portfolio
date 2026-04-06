@@ -55,12 +55,12 @@ export default {
   experience: {
     title: '職歴',
     present: '現在',
-    sbintuitions: {
-      company: '国産LLM開発企業',
+    aidevelopco: {
+      company: 'AI開発企業',
       nlp: {
         role: 'ML/NLPエンジニア',
         year: '2026/04-現在',
-        description: '国産LLM開発に伴う自然言語処理関連業務'
+        description: '自然言語処理関連業務'
       }
     },
     educo: {
@@ -170,7 +170,7 @@ export default {
     speakingHistoryDescription: 'カンファレンスや勉強会での登壇実績です。',
     speakingPoster: '（ポスターセッション）',
     speakingTalk: '（トーク）',
-    speakingPlanned: '（予定）',
+    speakingPlanned: '',
     speakingTentative: '（仮タイトル）',
     characters: '文字',
     likes: 'いいね'

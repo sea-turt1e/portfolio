@@ -42,10 +42,10 @@
       experiences() {
         const experienceData = [
           {
-            companyKey: 'experience.sbintuitions.company',
-            roleKey: 'experience.sbintuitions.nlp.role',
-            yearKey: 'experience.sbintuitions.nlp.year',
-            descriptionKey: 'experience.sbintuitions.nlp.description',
+            companyKey: 'experience.aidevelopco.company',
+            roleKey: 'experience.aidevelopco.nlp.role',
+            yearKey: 'experience.aidevelopco.nlp.year',
+            descriptionKey: 'experience.aidevelopco.nlp.description',
             technologies: ['Python', 'NLP', 'LLM']
           },
           {

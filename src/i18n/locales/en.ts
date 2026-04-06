@@ -55,12 +55,12 @@ export default {
   experience: {
     title: 'Work Experience',
     present: 'Present',
-    sbintuitions: {
-      company: 'Domestic LLM Development Company',
+    aidevelopco: {
+      company: 'AI Development Company',
       nlp: {
         role: 'ML/NLP Engineer',
         year: 'Apr 2026 - Present',
-        description: 'Natural language processing work related to domestic LLM development'
+        description: 'Natural language processing work'
       }
     },
     educo: {
